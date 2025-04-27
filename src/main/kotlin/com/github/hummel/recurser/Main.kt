@@ -1,7 +1,7 @@
 package com.github.hummel.recurser
 
 import com.formdev.flatlaf.FlatLightLaf
-import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatGitHubDarkIJTheme
+import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMTGitHubDarkIJTheme
 import java.awt.BorderLayout
 import java.awt.Dimension
 import java.awt.EventQueue
@@ -14,7 +14,7 @@ fun main() {
 	FlatLightLaf.setup()
 	EventQueue.invokeLater {
 		try {
-			UIManager.setLookAndFeel(FlatGitHubDarkIJTheme())
+			UIManager.setLookAndFeel(FlatMTGitHubDarkIJTheme())
 			val frame = GUI()
 			frame.isVisible = true
 		} catch (e: Exception) {
