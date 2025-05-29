@@ -1,4 +1,4 @@
-package com.github.hummel.recurser
+package com.github.hummel.recren
 
 import com.formdev.flatlaf.FlatLightLaf
 import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMTGitHubDarkIJTheme

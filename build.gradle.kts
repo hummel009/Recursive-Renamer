@@ -26,7 +26,7 @@ java {
 }
 
 application {
-	mainClass = "com.github.hummel.recurser.MainKt"
+	mainClass = "com.github.hummel.recren.MainKt"
 }
 
 tasks {
@@ -34,7 +34,7 @@ tasks {
 		manifest {
 			attributes(
 				mapOf(
-					"Main-Class" to "com.github.hummel.recurser.MainKt"
+					"Main-Class" to "com.github.hummel.recren.MainKt"
 				)
 			)
 		}
