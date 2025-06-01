@@ -84,7 +84,7 @@ class RecursiveRenamer : JFrame() {
 		}
 
 		processButton = JButton("Rename").apply {
-			preferredSize = Dimension(100, 30)
+			preferredSize = Dimension(100, preferredSize.height)
 			alignmentX = CENTER_ALIGNMENT
 			addActionListener {
 				process()
