@@ -51,6 +51,7 @@ class RecursiveRenamer : JFrame() {
 			add(folderPathField, BorderLayout.CENTER)
 
 			val browseButton = JButton("Browse").apply {
+				preferredSize = Dimension(100, preferredSize.height)
 				addActionListener {
 					selectPath()
 				}
@@ -85,7 +86,6 @@ class RecursiveRenamer : JFrame() {
 
 		processButton = JButton("Rename").apply {
 			preferredSize = Dimension(100, preferredSize.height)
-			alignmentX = CENTER_ALIGNMENT
 			addActionListener {
 				process()
 			}
