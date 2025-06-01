@@ -11,7 +11,9 @@
 [![Technical Debt][technical_debt_badge]][technical_debt_link]
 [![Lines of Code][lines_of_code_badge]][lines_of_code_link]
 
-Program for recursive renaming of folders and files.
+Program for recursive renaming of folders and files. Renames specified fragments in names of all files and folders that
+are in the specified folder, as well as in folders that are in the specified folder, and so on (recursively). Can ignore
+case.
 
 </div>
 
