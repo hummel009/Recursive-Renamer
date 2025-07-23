@@ -13,8 +13,10 @@ val embed: Configuration by configurations.creating
 
 dependencies {
 	embed("org.jetbrains.kotlin:kotlin-stdlib:latest.release")
+
 	embed("com.formdev:flatlaf:latest.release")
 	embed("com.formdev:flatlaf-intellij-themes:latest.release")
+
 	implementation("com.formdev:flatlaf:latest.release")
 	implementation("com.formdev:flatlaf-intellij-themes:latest.release")
 }

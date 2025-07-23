@@ -1,5 +1,3 @@
-<div align = "center">
-
 [![Code Smells][code_smells_badge]][code_smells_link]
 [![Maintainability Rating][maintainability_rating_badge]][maintainability_rating_link]
 [![Security Rating][security_rating_badge]][security_rating_link]
@@ -14,8 +12,6 @@
 Program for recursive renaming of folders and files. Renames specified fragments in names of all files and folders that
 are in the specified folder, as well as in folders that are in the specified folder, and so on (recursively). Can ignore
 case.
-
-</div>
 
 <!----------------------------------------------------------------------------->
 

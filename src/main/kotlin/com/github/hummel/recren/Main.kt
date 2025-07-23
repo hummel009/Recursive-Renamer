@@ -107,7 +107,9 @@ class RecursiveRenamer : JFrame() {
 		val toText = toField.text
 
 		if (folderPath.isEmpty() || fromText.isEmpty() || toText.isEmpty()) {
-			JOptionPane.showMessageDialog(this, "Empty fields", "Error", JOptionPane.ERROR_MESSAGE)
+			JOptionPane.showMessageDialog(
+				this, "Empty fields", "Error", JOptionPane.ERROR_MESSAGE
+			)
 			return
 		}
 
@@ -118,11 +120,7 @@ class RecursiveRenamer : JFrame() {
 		thread {
 			try {
 				rename(
-					folderPath,
-					fromText,
-					toText,
-					ignoreCaseCheckbox.isSelected,
-					renameFoldersCheckbox.isSelected
+					folderPath, fromText, toText, ignoreCaseCheckbox.isSelected, renameFoldersCheckbox.isSelected
 				)
 
 				JOptionPane.showMessageDialog(
@@ -131,19 +129,11 @@ class RecursiveRenamer : JFrame() {
 			} catch (e: Exception) {
 				e.printStackTrace()
 				JOptionPane.showMessageDialog(
-					this,
-					"Error: ${e.message}",
-					"Error",
-					JOptionPane.ERROR_MESSAGE
+					this, "Error: ${e.message}", "Error", JOptionPane.ERROR_MESSAGE
 				)
 			} finally {
 				listOf(
-					folderPathField,
-					fromField,
-					toField,
-					processButton,
-					ignoreCaseCheckbox,
-					renameFoldersCheckbox
+					folderPathField, fromField, toField, processButton, ignoreCaseCheckbox, renameFoldersCheckbox
 				).forEach {
 					it.isEnabled = true
 				}
